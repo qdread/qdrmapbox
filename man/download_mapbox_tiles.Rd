@@ -5,7 +5,6 @@
 \title{Download tiles from mapbox given zoom level and the calculated tile indices}
 \usage{
 download_mapbox_tiles(
-  zoom,
   tile_numbers_mat,
   download_dir,
   resolution = "high",
