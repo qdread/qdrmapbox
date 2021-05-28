@@ -1,12 +1,12 @@
 Package: qdrmapbox
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Download Mapbox Raster Tiles and Georeference for Static Mapping
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Quentin Read
+Maintainer: Quentin Read <qread@sesync.org>
+Description: This is a minimal R package I wrote for a SESYNC Cyberhelp blog post.
+    See README.md for more details.
+License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
 Imports: 

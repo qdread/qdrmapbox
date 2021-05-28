@@ -1,3 +1,6 @@
+#' Find all tiles given a zoom level and the coordinates of each corner
+#'
+#' @export
 find_tile_number <- function(zoom, lat_deg, lon_deg) {
   lat_rad <- lat_deg * pi / 180 # Convert lat to radians
   n <- 2 ^ zoom
@@ -9,6 +12,9 @@ find_tile_number <- function(zoom, lat_deg, lon_deg) {
   expand.grid(x = xtileseq, y = ytileseq)
 }
 
+#' Find coordinates of the upper left and lower right corners of a tile
+#'
+#' @export
 corner_coords <- function(zoom, xtile, ytile) {
   n = 2 ^ zoom
   xcorners <- xtile + c(0, 1) # NW, SE

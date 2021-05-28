@@ -1,3 +1,6 @@
+#' Georeference a Mapbox jpg tile and create GeoTiff
+#'
+#' @export
 georeference_tile <- function(file_name, output_file_name, x, y, zoom, ...) {
   # Determine the two extreme corners of the tile.
   corners <- corner_coords(zoom, x, y)

@@ -1,3 +1,6 @@
+#' Download tiles from mapbox given zoom level and the calculated tile indices
+#'
+#' @export
 download_mapbox_tiles <- function(zoom, tile_numbers_mat, download_dir, resolution = 'high', jpg_quality = 90) {
   res <- ifelse(resolution == 'high', '@2x', '')
   baseurl <- 'https://api.mapbox.com/v4/mapbox.satellite'
@@ -12,6 +15,9 @@ download_mapbox_tiles <- function(zoom, tile_numbers_mat, download_dir, resoluti
 
 }
 
+#' Set Mapbox API key as environment variable
+#'
+#' @export
 set_mapbox_api_key <- function(keyfile) {
   Sys.setenv(MAPBOXAPIKEY = readLines(keyfile))
 }
