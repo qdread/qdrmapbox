@@ -16,8 +16,8 @@ To use this package, you will need to [sign up for a Mapbox account](https://acc
 
 ## Example walkthrough
 
-A walkthrough of downloading and georeferencing tiles, and creating a map with the resulting image, is in the [blog post][blog].
+A walkthrough of downloading and georeferencing tiles, and creating a map with the resulting image, is in the [blog post][blog]. Code for the walkthrough is in this repo (walkthrough.R).
 
-*Last modified by QDR, 28 May 2021*
+*Last modified by QDR, 31 May 2021*
 
-[blog]: https://cyberhelp.sesync.org/blog
+[blog]: https://cyberhelp.sesync.org/blog/mapping-with-Mapbox.html
