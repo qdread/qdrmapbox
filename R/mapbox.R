@@ -25,3 +25,11 @@ set_mapbox_api_key <- function(keyfile) {
   Sys.setenv(MAPBOXAPIKEY = readLines(keyfile))
 }
 
+#' Add Mapbox logo to plot
+#'
+#' @export
+mapbox_logo <- function(xmin, xmax, ymin, ymax) {
+  img <- png::readPNG(system.file("extdata/mapboxlogo.png", package="qdrmapbox"))
+  g <- grid::rasterGrob(img, interpolate=TRUE)
+  ggplot2::annotation_custom(g, xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax)
+}

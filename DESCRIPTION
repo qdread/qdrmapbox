@@ -12,6 +12,9 @@ LazyData: true
 Imports: 
     curl,
     gdalUtils,
+    ggplot2,
     glue,
+    grid,
+    png,
     purrr
 RoxygenNote: 7.1.1
